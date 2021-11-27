@@ -13,10 +13,7 @@ class RateCards extends StatefulWidget {
 class _RateCardsState extends State<RateCards> {
   @override
   Widget build(BuildContext context) {
-    const title = 'Floating App Bar';
-
     return MaterialApp(
-      title: title,
       home: Scaffold(
         // No appbar provided to the Scaffold, only a body with a
         // CustomScrollView.
@@ -24,16 +21,19 @@ class _RateCardsState extends State<RateCards> {
           slivers: [
             // Add the app bar to the CustomScrollView.
             SliverAppBar(
-              backgroundColor: const Color(0xFFFFFF),
+              title: Text('Rate Cards'),
+              centerTitle: true,
+              pinned: true,
               floating: true,
-              flexibleSpace: Image(
-                image: AssetImage('assets/ratescard_youtube.jpeg'),
-                fit: BoxFit.cover,
-              ),
-              // Make the initial height of the SliverAppBar larger than normal.
               expandedHeight: 185,
+              backgroundColor: Colors.blue[800],
+              flexibleSpace: const FlexibleSpaceBar(
+                background: Image(
+                    image: AssetImage('assets/ratescard_youtube.jpeg'),
+                    fit: BoxFit.cover),
+              ),
             ),
-            // Next, create a SliverList
+            //Next, create a SliverList
             SliverList(
               // Use a delegate to build items as they're scrolled on screen.
               delegate: SliverChildBuilderDelegate(

@@ -1,4 +1,4 @@
-import 'package:simulator/max_components/charge_item.dart';
+import 'charge_item.dart';
 
 class Data {
   static final List<ChargeItem> masterList = <ChargeItem>[

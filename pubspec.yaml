@@ -14,6 +14,8 @@ dependencies:
   flutter_launcher_icons: ^0.9.0
   
   cupertino_icons: ^1.0.2
+  provider: ^6.0.1
+  expansion_tile_card: ^2.0.0
 
 dev_dependencies:
 flutter_icons:
