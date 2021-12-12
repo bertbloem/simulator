@@ -5,10 +5,6 @@ import 'package:simulator/components/master_list_data.dart';
 
 import 'add_charge_tile_screen.dart';
 
-import 'dart:async';
-
-import 'package:path/path.dart';
-import 'package:sqflite/sqflite.dart';
 
 // LIST SCREEN LIST SCREEN LIST SCREEN LIST SCREEN LIST SCREEN LIST SCREEN LIST SCREEN
 
@@ -39,7 +35,6 @@ class MasterListScreen extends StatelessWidget {
         // CONSUMER! CONSUMER WIDGET!
         // chargedata = Provider.of<MasterListData>(context) and is replaced by Consumer
         builder: (context, chargeData, child) {
-          ChargeTile myChargeTile;
           return CustomScrollView(
             slivers: <Widget>[
               SliverAppBar(
@@ -51,7 +46,7 @@ class MasterListScreen extends StatelessWidget {
                 backgroundColor: Colors.blue[800],
                 flexibleSpace: const FlexibleSpaceBar(
                   background: Image(
-                      image: AssetImage('assets/randomlist_youtube.jpeg'),
+                      image: AssetImage('assets/images/randomlist_youtube.jpeg'),
                       fit: BoxFit.cover),
                 ),
               ),

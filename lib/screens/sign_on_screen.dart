@@ -27,7 +27,7 @@ class _SignOnState extends State<SignOn> {
               backgroundColor: const Color(0xFFFFFF),
               floating: true,
               flexibleSpace: Image(
-                image: AssetImage('assets/signon_youtube.jpeg'),
+                image: AssetImage('assets/images/signon_youtube.jpeg'),
                 fit: BoxFit.cover,
               ),
               // Make the initial height of the SliverAppBar larger than normal.
