@@ -65,7 +65,7 @@ class AddChargeTileScreen extends StatelessWidget {
                 newValidDateEnd,
                 newSupplierName,
                 newCustomerName,
-                newComment); // .add or .addchargetile?
+                newComment);
             Navigator.pop(context);
           },
         ),
