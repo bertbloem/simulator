@@ -36,7 +36,7 @@ class _MyAppState extends State<MyApp> {
           MasterListData(), // => RETURNS, CREATES, PROVIDES MASTERLISTDATA OBJECT
       child: MaterialApp(
         theme: ThemeData(
-          textTheme: GoogleFonts.dmSansTextTheme(),
+          textTheme: GoogleFonts.robotoTextTheme(),
         ),
         home: Scaffold(
           backgroundColor: Colors.white,

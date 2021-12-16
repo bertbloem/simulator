@@ -158,7 +158,10 @@ class Label extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(label);
+    return Text(
+      label,
+      style: TextStyle(fontWeight: FontWeight.bold),
+    );
   }
 }
 
