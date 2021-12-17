@@ -29,7 +29,7 @@ class _RateCardsState extends State<RateCards> {
               backgroundColor: Colors.blue[800],
               flexibleSpace: const FlexibleSpaceBar(
                 background: Image(
-                    image: AssetImage('assets/images/ratescard_youtube.jpeg'),
+                    image: AssetImage('assets/ratescard_youtube.jpeg'),
                     fit: BoxFit.cover),
               ),
             ),

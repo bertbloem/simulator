@@ -26,7 +26,7 @@ class _CostSheetState extends State<CostSheet> {
               backgroundColor: Colors.blue[800],
               flexibleSpace: const FlexibleSpaceBar(
                 background: Image(
-                    image: AssetImage('assets/images/costsheet_youtube.jpeg'),
+                    image: AssetImage('assets/costsheet_youtube.jpeg'),
                     fit: BoxFit.cover),
               ),
             ),
