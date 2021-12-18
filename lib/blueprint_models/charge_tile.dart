@@ -38,6 +38,114 @@ class ChargeTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    return ExpansionTileCard(title: Text(uniqueid.toString()), children: [
+      Container(
+        padding: (EdgeInsets.all(20.0)),
+        child: Row(
+          children: [
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Label(
+                  'Unique ID:',
+                ),
+                Label(
+                  'Charge Code:',
+                ),
+                Label(
+                  'Charge Name:'
+                ),
+                Label(
+                  'Charge Loction:',
+                ),
+                Label(
+                  'Charge Type:',
+                ),
+                Label(
+                  'Charge Unit:',
+                ),
+                Label(
+                  'Charge Currency:',
+                ),
+                Label(
+                  'Buy Minimum:',
+                ),
+                Label(
+                  'Buy Rate:',
+                ),
+                Label(
+                  'Buy Maximum:',
+                ),
+                Label(
+                  'Valid Date Start:',
+                ),
+                Label(
+                  'Valid Date End:',
+                ),
+                Label(
+                  'Supplier Name:',
+                ),
+                Label(
+                  'Customer Name:',
+                ),
+                Label(
+                  'Comment:',
+                ),
+              ],
+            ),
+            SizedBox(width: 16.0),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Data(
+                  '$uniqueid',
+                ),
+                Data(
+                  '$chargecode',
+                ),
+                Data(
+                  chargename,
+                ),
+                Data(
+                  chargelocation,
+                ),
+                Data(
+                  chargetype,
+                ),
+                Data(
+                  chargeunit,
+                ),
+                Data(
+                  chargecurrency,
+                ),
+                Data(
+                  '$buyminimum',
+                ),
+                Data(
+                  '$buyrate',
+                ),
+                Data(
+                  '$buymaximum',
+                ),
+                Data(
+                  '$validdatestart',
+                ),
+                Data(
+                  '$validdateend',
+                ),
+                Data(
+                  '$suppliername!',
+                ),
+                Data(
+                  '$customername!',
+                ),
+                Data(
+                  '$comment!',
+                ),
+              ],
+            ),
+          ],
+        ),
     return Container(
       padding: (EdgeInsets.all(20.0)),
       child: Row(
