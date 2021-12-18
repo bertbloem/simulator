@@ -54,7 +54,7 @@ class ChargeTile extends StatelessWidget {
                   'Charge Code:',
                 ),
                 Label(
-                  'Charge Name:',
+                  'Charge Name:'
                 ),
                 Label(
                   'Charge Loction:',
